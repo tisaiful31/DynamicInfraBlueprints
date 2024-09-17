@@ -12,7 +12,6 @@ module "vpc" {
   public_subnets       = local.public-subnets
   private_subnet_names = ["${local.env}-${local.project}-private-subnet-1a","${local.env}-${local.project}-private-subnet-1b","${local.env}-${local.project}-private-subnet-1c"]
   public_subnet_names  = ["${local.env}-${local.project}-public-subnet-1a","${local.env}-${local.project}-public-subnet-1b","${local.env}-${local.project}-public-subnet-1c"]
-  #private_subnet_suffix = "private"
   create_igw           = true
   enable_dns_hostnames = true
   enable_dns_support   = true
